@@ -30,8 +30,8 @@ System.register(['angular2/core', './courses.component', './authors.component'],
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "<h1>My first Angular2 App</h1>\n               <courses></courses>\n               <authors></authors>",
-                        directives: [courses_component_1.CoursesComponent, authors_component_1.AuthorsComponent],
+                        template: "<h1>My First Angular2 App</h1>\n               <courses></courses>\n               <authors></authors>",
+                        directives: [courses_component_1.CoursesComponent, authors_component_1.AuthorsComponent]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);

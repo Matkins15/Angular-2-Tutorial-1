@@ -4,11 +4,11 @@ import {AuthorsComponent} from './authors.component'
 
 @Component({
     selector: 'my-app',
-    template: `<h1>My first Angular2 App</h1>
+    template: `<h1>My First Angular2 App</h1>
                <courses></courses>
                <authors></authors>`,
 
-    directives: [CoursesComponent, AuthorsComponent],
+    directives: [CoursesComponent, AuthorsComponent]
 })
 
 // root of application, view component
