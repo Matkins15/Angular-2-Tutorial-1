@@ -1,6 +1,8 @@
 // component decorator from module 'angular2/core'
 // this is also a function
 import {Component} from 'angular2/core'
+
+import {CourseService} from './course.service'
 // all decorators are prefixed with @ symbol
 // calling decorator function Component which takes an object selector and template
 @Component({
@@ -12,9 +14,14 @@ import {Component} from 'angular2/core'
                     {{course}}
                     </li>
                 </ul>
-              `
+              `,
+    providers: [CourseService]
 })
 export class CoursesComponent {
     title = "The title of courses page";
-    courses = ["Course1", "Course2", "Course3"];
+    courses;
+
+    constructor(courseService: CourseService){
+        this.courses = courseService.getCourses();
+    }
 }
